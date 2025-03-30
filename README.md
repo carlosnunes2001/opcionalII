@@ -1,69 +1,58 @@
 # opcionalII
 
-Nome da Empresa: EduTech Angola
+Nome do Sitema: EduTech Angola
 
-Setor: Educação e Tecnologia
-Descrição: A EduTech Angola é uma plataforma de ensino online voltada para cursos profissionalizantes e reforço escolar. A empresa oferece aulas interativas, materiais didáticos digitais e suporte ao aluno, facilitando o acesso à educação de qualidade em diversas áreas do conhecimento.
+A EduTech Angola é uma plataforma de ensino online voltada para cursos profissionalizantes e reforço escolar. Seu objetivo é democratizar o acesso à educação, permitindo que alunos aprendam de forma flexível e interativa, enquanto professores podem criar e compartilhar conteúdos.
 
-Casos de Uso
+A plataforma traz benefícios tanto para alunos quanto para professores:
+	•	Para Alunos: Oferece acesso a cursos de diferentes áreas, aulas ao vivo, materiais didáticos digitais e certificação ao final dos cursos. Isso facilita a aprendizagem e qualificação profissional.
+	•	Para Professores: Permite que educadores criem e disponibilizem cursos, ampliando suas oportunidades de ensino e geração de renda.
+	•	Para o Ensino: Garante um ambiente de aprendizado dinâmico e acessível, com suporte técnico e acadêmico para melhor experiência educacional.
 
-1. Cadastro de Usuário
+Requisitos Funcionais (RF)
 
-Ator: Aluno ou Professor
-Descrição: O usuário cria uma conta na plataforma para acessar cursos ou ministrar aulas.
-Fluxo Principal:
-	1.	O usuário acessa o site ou aplicativo.
-	2.	Escolhe a opção “Criar Conta”.
-	3.	Preenche os dados pessoais e define seu perfil (Aluno ou Professor).
-	4.	O sistema verifica e confirma o cadastro via e-mail ou SMS.
+Os requisitos funcionais descrevem as funcionalidades que o sistema deve oferecer.
+	1.	RF1 – Cadastro de Usuário
+	•	O sistema deve permitir que alunos e professores criem contas.
+	•	Deve haver validação de e-mail ou telefone para ativação da conta.
+	2.	RF2 – Inscrição em Cursos
+	•	O aluno deve conseguir visualizar os cursos disponíveis.
+	•	O aluno deve poder se inscrever em cursos gratuitos ou pagos.
+	•	O sistema deve processar pagamentos online para cursos pagos.
+	3.	RF3 – Criação de Curso
+	•	O professor deve conseguir criar cursos na plataforma.
+	•	O sistema deve permitir a adição de módulos e materiais didáticos.
+	•	O curso só será publicado após aprovação da administração.
+	4.	RF4 – Aulas ao Vivo
+	•	O professor deve poder agendar aulas ao vivo.
+	•	O sistema deve notificar os alunos inscritos.
+	•	O sistema deve permitir interação por chat durante a aula ao vivo.
+	•	As aulas devem ser gravadas e armazenadas para revisão.
+	5.	RF5 – Avaliação e Certificação
+	•	O sistema deve disponibilizar testes para cada curso.
+	•	O aluno deve obter um certificado digital ao concluir o curso com aprovação.
+	•	O certificado deve conter nome do curso, nome do aluno e data de conclusão.
+	6.	RF6 – Suporte ao Aluno
+	•	O aluno deve poder enviar dúvidas via chat ou e-mail.
+	•	O sistema deve categorizar as dúvidas em técnicas ou acadêmicas.
+	•	A equipe de suporte deve responder às solicitações dentro de um prazo definido.
 
-2. Inscrição em Curso
+Requisitos Não Funcionais (RNF)
 
-Ator: Aluno
-Descrição: O aluno escolhe um curso e se inscreve para começar os estudos.
-Fluxo Principal:
-	1.	O aluno faz login na plataforma.
-	2.	Acessa o catálogo de cursos disponíveis.
-	3.	Escolhe um curso e clica em “Inscrever-se”.
-	4.	Se o curso for pago, realiza o pagamento online.
-	5.	O sistema confirma a inscrição e libera o acesso ao conteúdo.
-
-3. Criação de Curso
-
-Ator: Professor
-Descrição: O professor cadastra um novo curso na plataforma.
-Fluxo Principal:
-	1.	O professor faz login na plataforma.
-	2.	Acessa a opção “Criar Curso”.
-	3.	Insere informações como nome do curso, descrição, módulos e materiais.
-	4.	O sistema analisa o curso e, se aprovado, disponibiliza na plataforma.
-
-4. Aulas ao Vivo
-
-Ator: Aluno e Professor
-Descrição: O professor ministra aulas ao vivo para os alunos inscritos.
-Fluxo Principal:
-	1.	O professor agenda uma aula ao vivo.
-	2.	Os alunos recebem um lembrete e acessam o link na plataforma.
-	3.	A aula acontece em tempo real com interação via chat e vídeo.
-	4.	A aula é gravada e disponibilizada para revisão.
-
-5. Avaliação e Certificação
-
-Ator: Aluno
-Descrição: O aluno faz testes e recebe um certificado ao concluir o curso.
-Fluxo Principal:
-	1.	O aluno completa os módulos do curso.
-	2.	Realiza a avaliação final online.
-	3.	Se aprovado, recebe um certificado digital.
-	4.	O certificado pode ser baixado ou compartilhado no LinkedIn.
-
-6. Suporte ao Aluno
-
-Ator: Aluno e Equipe de Atendimento
-Descrição: O aluno pode solicitar ajuda técnica ou acadêmica.
-Fluxo Principal:
-	1.	O aluno acessa a área de suporte.
-	2.	Escolhe entre ajuda técnica ou dúvida acadêmica.
-	3.	Envia a solicitação via chat ou e-mail.
-	4.	A equipe responde e resolve o problema.
+Os requisitos não funcionais especificam qualidades e restrições do sistema.
+	1.	RNF1 – Usabilidade
+	•	A plataforma deve ser intuitiva e fácil de navegar.
+	•	O design deve ser responsivo, adaptando-se a dispositivos móveis e desktops.
+	2.	RNF2 – Desempenho
+	•	O sistema deve suportar múltiplos acessos simultâneos sem perda de desempenho.
+	•	As páginas devem carregar em até 3 segundos em condições normais.
+	3.	RNF3 – Segurança
+	•	Os dados dos usuários devem ser protegidos por criptografia.
+	•	O sistema deve seguir padrões de segurança para pagamentos online.
+	•	O login deve ter autenticação por e-mail ou telefone.
+	4.	RNF4 – Disponibilidade
+	•	A plataforma deve estar disponível 24/7, com tempo de inatividade mínimo.
+	•	O sistema deve ter um backup diário dos dados.
+	5.	RNF5 – Escalabilidade
+	•	O sistema deve ser capaz de crescer conforme o número de usuários aumenta.
+	•	A infraestrutura deve permitir a adição de novos cursos e funcionalidades sem comprometer o desempenho.
